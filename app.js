@@ -1,13 +1,13 @@
-let enrolledNumbers = [];
-let Users = [];
+let enrolledno = [];
+let users = [];
 
 let formContainer = document.getElementById('form');
 
-let resultContainer = document.getElementById('outputDisplay');
+let resultContainer = document.getElementById('Display');
 resultContainer.classList.add('d-none');
 
 function Registration(){
-    let enrollNumber = document.getElementById('enrollNum').value;
+    let enrollNumber = document.getElementById('enrollno').value;
     let userName = document.getElementById('Username').value;
 
     if(enrolledNumbers.includes(enrollNumber)){
@@ -29,8 +29,8 @@ function Registration(){
             alert.classList.add('d-none');
         }, 2000)
     }{
-        enrolledNumbers.push(enrollNumber);
-        Users.push(userName);
+        enrolledno.push(enrollNumber);
+        users.push(userName);
         
         let resultEnrollNum = document.createElement('h4');
         resultEnrollNum.classList.add('result-number');
